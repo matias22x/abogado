@@ -12,5 +12,11 @@ angular.module('abogadoRouter', []).config(function($stateProvider) {
             url: '/seccion1', // url que va arriba
             templateUrl: 'templates/views/main/seccion1.html', //ubicacion del html
             controller: 'seccion1' //nombre controller
+        })
+        .state('contacto', {
+            cache: false,
+            url: '/contacto', // url que va arriba
+            templateUrl: 'templates/views/main/contacto.html', //ubicacion del html
+            controller: 'contactoController' //nombre controller
         });
 });
