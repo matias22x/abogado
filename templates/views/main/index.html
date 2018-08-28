@@ -1,1 +1,136 @@
-<h1>esto es otra vista, no el index.html</h1>
+<div class="slider">
+  <ul class="slides">
+    <li>
+      <img src="img/fondoPrueba.jpg">
+      <div class="caption center-align">
+        <div class="col s12 cajaAlumno">
+          <h4> <span class="title-bg"> REGISTROS</span> </h4>
+          <span class="light parrafo title-bgbis">ALUMNOS REGISTRADOS:<br></span><span class="parrafo sinEstilo">{{datos.cantidadPacientes}}</span>
+        </div>
+      </div>
+    </li>
+    <li>
+      <img src="img/fondoPrueba.jpg">
+      <div class="caption center-align">
+        <div class="col s12 cajaAlumno">
+          <h4> <span class="title-bg"> REGISTROS</span> </h4>
+          <span class="light parrafo title-bgbis">ESPECIALISTAS REGISTRADOS:<br></span><span class="parrafo sinEstilo">{{datos.cantidadEspecialistas}}</span>
+        </div>
+      </div>
+    </li>
+    <li>
+      <img src="img/fondoPrueba.jpg">
+      <div class="caption center-align">
+        <div class="col s12 cajaAlumno">
+          <h4> <span class="title-bg"> TURNOS</span> </h4>
+          <span class="light parrafo title-bgbis">DEL DÍA DE HOY:<br></span><span class="parrafo sinEstilo">{{datos.cantidadTurnosDelDia}}</span>
+        </div>
+      </div>
+    </li>
+    </li>
+    <li>
+      <img src="img/fondoPrueba.jpg">
+      <div class="caption center-align">
+        <div class="col s12 cajaAlumno">
+          <h4> <span class="title-bg"> TURNOS</span> </h4>
+          <span class="light parrafo title-bgbis">TURNOS REALIZADOS EN LOS ÚLTIMOS 30 DÍAS:<br></span><span class="parrafo sinEstilo">{{datos.cantidadTurnosDelMes}}</span>
+        </div>
+      </div>
+    </li>
+    <li>
+      <img src="img/fondoPrueba.jpg">
+      <div class="caption center-align">
+        <div class="col s12 cajaAlumno">
+          <h4> <span class="title-bg"> WEBOT</span> </h4>
+          <span class="light parrafo title-bgbis">DIAGNOSTICOS RECAUDADOS:<br></span><span class="parrafo sinEstilo">{{datos.CantidadDiagnosticosPrematuros}}</span>
+        </div>
+      </div>
+    </li>
+    <li>
+      <img src="img/fondoPrueba.jpg">
+      <div class="caption center-align">
+        <div class="col s12 cajaAlumno">
+          <h4> <span class="title-bg"> WEBOT</span> </h4>
+          <span class="light parrafo title-bgbis">GRAVEDAD PROMEDIO DE LOS DIAGNOSTICOS:<br></span><span class="parrafo sinEstilo">{{datos.gravedadPromedio}} de 22 en la escala</span>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <div class="arrows prev" onclick="sliderAnt()"></div>
+  <div class="arrows next" onclick="sliderSig()"></div>
+</div>
+
+<div id="inbox" class="col s12">
+  <h1>Informacion</h1>
+  <span>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie ipsum sed erat egestas sodales. Mauris molestie justo quis nulla congue, ut consequat felis sagittis. Vestibulum fringilla cursus dictum. Sed eu ipsum et neque pharetra viverra. Phasellus cursus bibendum ligula et feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec in dapibus massa. Integer sed orci tristique, vulputate purus a, maximus lectus. Nullam vel mauris sit amet mauris fermentum vulputate eget sit amet lacus. Donec vel augue suscipit ligula luctus feugiat. Fusce sagittis maximus arcu id suscipit.
+
+Mauris hendrerit cursus venenatis. Integer mollis tellus sapien, sed ultricies quam imperdiet quis. Cras fringilla vulputate metus, vitae pellentesque diam sollicitudin vel. Vivamus dolor magna, blandit imperdiet auctor ut, aliquet vestibulum leo. Vestibulum hendrerit tristique luctus. In hac habitasse platea dictumst. Phasellus et lacinia nibh. Suspendisse pulvinar odio nec orci pretium congue. Nam molestie dictum tempus. Nullam eleifend bibendum eros. Duis risus magna, venenatis at dolor in, porta dictum sapien. Aenean ac augue non ex volutpat pharetra ut at urna. Mauris vel pellentesque felis. Donec vulputate ornare orci accumsan interdum. Quisque vitae diam in turpis aliquam pellentesque.
+</span>
+</div>
+<div id="unread" class="col s12">Unread</div>
+<div id="outbox" class="col s12">Outbox (Disabled)</div>
+<div id="contacto" class="col s12">
+  <h1>contacto</h1>
+  <div class="row">
+    <div class="col s6">
+      <div class="row">
+        <form id="formContacto" name="formContacto">
+          <div class="row">
+            <div class="input-field col s12">
+              <input placeholder="Ingrese su nombre y apellido" id="nombreApellido" name="nombreApellido" type="text" class="validate">
+              <label for="nombreApellido">Nombre y Apellido</label>
+            </div>
+            <div class="input-field col s12">
+              <input placeholder="Ingrese su telefono" id="telefono" name="telefono" type="text" class="validate">
+              <label for="telefono">Telefono</label>
+            </div>
+            <div class="input-field col s12">
+              <input placeholder="Ingrese su celular" id="celular" name="celular" type="text" class="validate">
+              <label for="celular">Celular</label>
+            </div>
+            <div class="input-field col s12">
+              <input placeholder="Ingrese su email" id="email" name="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="col s6">
+      <div class="row">
+        <div class="col s12">
+          <h5>Direccion</h5>
+        </div>
+        <div class="col s12 text-center">
+          <img class="center" src="img/mapa.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.slider').slider();
+
+    $(document).ready(function() {
+      $('.tabs').tabs({
+        swipeable: true,
+        responsiveThreshold: 1920
+      });
+    });
+
+
+  });
+
+  function sliderSig() {
+    $('.slider').slider('pause');
+    $('.slider').slider('next');
+  }
+
+  function sliderAnt() {
+    $('.slider').slider('pause');
+    $('.slider').slider('prev');
+  }
+</script>
