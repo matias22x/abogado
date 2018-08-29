@@ -50,6 +50,21 @@ abogadoApp.config(function(config, $stateProvider, $authProvider, $urlRouterProv
     $translateProvider.preferredLanguage('es');
 });
 
-abogadoApp.run(function($rootScope, userData, $state, $log, $auth) {
-
+abogadoApp.run(function($rootScope, userData, $state, $log, $auth,$location, $anchorScroll) {
+  $anchorScroll.yOffset = 70;
+  $rootScope.irAInicio = function() {
+    console.log("inicio");
+    $location.hash('inicioPage');
+    $anchorScroll();
+  };
+  $rootScope.irAInformacion = function() {
+    console.log("info");
+    $location.hash('infoPage');
+    $anchorScroll();
+  };
+  $rootScope.irAContacto = function() {
+    console.log("contacto");
+    $location.hash('contacto');
+    $anchorScroll();
+  };
 });

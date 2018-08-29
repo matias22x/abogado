@@ -43,17 +43,24 @@
 </head>
 
 <body ng-app="abogadoApp" class="container">
-  <h3>Abogado Catena</h3>
-  <div class="row">
-    <div class="col s12">
-      <ul class="tabs">
-        <li class="tab col s3"><a ui-sref="main" class="active">Inicio</a></li>
-        <li class="tab col s3"><a ui-sref="seccion1">seccion1</a></li>
-        <li class="tab col s3"><a ui-sref="contacto">Contacto</a></li>
-      </ul>
-    </div>
+<div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Logo</a>
 
+              <ul tabs reload="allTabContentLoaded">
+                  <li class="tab col s3"><a ng-click="irAInicio()" href=''>Inicio</a></li>
+                  <li class="tab col s3"><a ng-click="irAInformacion()" href=''>Informacion</a></li>
+                  <li class="tab col s3"><a ng-click="irAContacto()" href=''>Contacto</a></li>
+              </ul>
+
+      </div>
+    </nav>
   </div>
+  <br/>
+  <br/>
+  <br/>
+
   <!--  <nav class="nav-center fill" >
           <div class="nav-wrapper container" style="width: 80%;">
             <ul id="main-menu" class="right hide-on-med-and-down">
@@ -65,6 +72,11 @@
         </nav> -->
   <main ui-view>
   </main>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('ul.tabs').tabs();
+  });
+  </script>
 </body>
 
 </html>

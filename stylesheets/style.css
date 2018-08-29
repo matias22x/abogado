@@ -1,0 +1,75 @@
+.arrows {
+  width: 30px;
+  height: 30px;
+  border-color: #d5d3d3;
+  position: absolute;
+  top: 50%;
+  margin-top: -31px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.prev {
+  border-bottom: 6px solid #000000;
+  border-left: 6px solid #000000;
+  transform: rotate(45deg);
+  left: 25px;
+}
+
+.next {
+  border-bottom: 6px solid #000000;
+  border-left: 6px solid #000000;
+  transform: rotate(-135deg);
+  right: 25px;
+}
+
+/*********************************************/
+
+.slider .slides li .caption {
+  top: 11% !important;
+}
+
+.slider .indicators .indicator-item {
+  background-color: #000000;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.slider .indicators .indicator-item.active {
+  background-color: #555555;
+}
+
+.slider .indicators {
+  bottom: 20px;
+  z-index: 10;
+}
+
+@media screen and (max-width: 660px) {
+  .slider .indicators {
+    bottom: 10px !important;
+  }
+}
+
+.slider .slides li {
+  margin-top: 0px !important;
+}
+
+.slider .slides {
+  background-color: #fff !important;
+}
+
+.title-bg {
+  color: #000000;
+}
+
+.parrafo {
+  color: #000000;
+}
+
+.imgOpaca {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  /* For IE8 and earlier */
+}

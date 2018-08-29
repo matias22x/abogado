@@ -1,57 +1,32 @@
+
+<div id="inicioPage">
 <div class="slider">
   <ul class="slides">
+
     <li>
-      <img src="img/fondoPrueba.jpg">
+      <img src="img/fondo1.jpg" class="imgOpaca">
       <div class="caption center-align">
         <div class="col s12 cajaAlumno">
-          <h4> <span class="title-bg"> REGISTROS</span> </h4>
-          <span class="light parrafo title-bgbis">ALUMNOS REGISTRADOS:<br></span><span class="parrafo sinEstilo">{{datos.cantidadPacientes}}</span>
+          <h4> <span class="title-bg">titulo</span> </h4>
+          <span class="light parrafo title-bgbis">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie ipsum sed erat egestas sodales. Mauris molestie justo quis nulla congue, ut consequat felis sagittis.</span>
         </div>
       </div>
     </li>
     <li>
-      <img src="img/fondoPrueba.jpg">
+      <img src="img/fondo2.jpg" class="imgOpaca">
       <div class="caption center-align">
         <div class="col s12 cajaAlumno">
-          <h4> <span class="title-bg"> REGISTROS</span> </h4>
-          <span class="light parrafo title-bgbis">ESPECIALISTAS REGISTRADOS:<br></span><span class="parrafo sinEstilo">{{datos.cantidadEspecialistas}}</span>
+          <h4> <span class="title-bg">titulo 2</span> </h4>
+          <span class="light parrafo title-bgbis">Mauris hendrerit cursus venenatis. Integer mollis tellus sapien, sed ultricies quam imperdiet quis. Cras fringilla vulputate metus, vitae pellentesque diam sollicitudin vel.</span>
         </div>
       </div>
     </li>
     <li>
-      <img src="img/fondoPrueba.jpg">
+      <img src="img/fondo3.jpg" class="imgOpaca">
       <div class="caption center-align">
         <div class="col s12 cajaAlumno">
-          <h4> <span class="title-bg"> TURNOS</span> </h4>
-          <span class="light parrafo title-bgbis">DEL DÍA DE HOY:<br></span><span class="parrafo sinEstilo">{{datos.cantidadTurnosDelDia}}</span>
-        </div>
-      </div>
-    </li>
-    </li>
-    <li>
-      <img src="img/fondoPrueba.jpg">
-      <div class="caption center-align">
-        <div class="col s12 cajaAlumno">
-          <h4> <span class="title-bg"> TURNOS</span> </h4>
-          <span class="light parrafo title-bgbis">TURNOS REALIZADOS EN LOS ÚLTIMOS 30 DÍAS:<br></span><span class="parrafo sinEstilo">{{datos.cantidadTurnosDelMes}}</span>
-        </div>
-      </div>
-    </li>
-    <li>
-      <img src="img/fondoPrueba.jpg">
-      <div class="caption center-align">
-        <div class="col s12 cajaAlumno">
-          <h4> <span class="title-bg"> WEBOT</span> </h4>
-          <span class="light parrafo title-bgbis">DIAGNOSTICOS RECAUDADOS:<br></span><span class="parrafo sinEstilo">{{datos.CantidadDiagnosticosPrematuros}}</span>
-        </div>
-      </div>
-    </li>
-    <li>
-      <img src="img/fondoPrueba.jpg">
-      <div class="caption center-align">
-        <div class="col s12 cajaAlumno">
-          <h4> <span class="title-bg"> WEBOT</span> </h4>
-          <span class="light parrafo title-bgbis">GRAVEDAD PROMEDIO DE LOS DIAGNOSTICOS:<br></span><span class="parrafo sinEstilo">{{datos.gravedadPromedio}} de 22 en la escala</span>
+          <h4> <span class="title-bg">titulo 3</span> </h4>
+          <span class="light parrafo title-bgbis">Aenean ac augue non ex volutpat pharetra ut at urna. Mauris vel pellentesque felis. Donec vulputate ornare orci accumsan interdum.</span>
         </div>
       </div>
     </li>
@@ -59,8 +34,8 @@
   <div class="arrows prev" onclick="sliderAnt()"></div>
   <div class="arrows next" onclick="sliderSig()"></div>
 </div>
-
-<div id="inbox" class="col s12">
+</div>
+<div id="infoPage" class="col s12">
   <h1>Informacion</h1>
   <span>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie ipsum sed erat egestas sodales. Mauris molestie justo quis nulla congue, ut consequat felis sagittis. Vestibulum fringilla cursus dictum. Sed eu ipsum et neque pharetra viverra. Phasellus cursus bibendum ligula et feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec in dapibus massa. Integer sed orci tristique, vulputate purus a, maximus lectus. Nullam vel mauris sit amet mauris fermentum vulputate eget sit amet lacus. Donec vel augue suscipit ligula luctus feugiat. Fusce sagittis maximus arcu id suscipit.
@@ -68,8 +43,7 @@
 Mauris hendrerit cursus venenatis. Integer mollis tellus sapien, sed ultricies quam imperdiet quis. Cras fringilla vulputate metus, vitae pellentesque diam sollicitudin vel. Vivamus dolor magna, blandit imperdiet auctor ut, aliquet vestibulum leo. Vestibulum hendrerit tristique luctus. In hac habitasse platea dictumst. Phasellus et lacinia nibh. Suspendisse pulvinar odio nec orci pretium congue. Nam molestie dictum tempus. Nullam eleifend bibendum eros. Duis risus magna, venenatis at dolor in, porta dictum sapien. Aenean ac augue non ex volutpat pharetra ut at urna. Mauris vel pellentesque felis. Donec vulputate ornare orci accumsan interdum. Quisque vitae diam in turpis aliquam pellentesque.
 </span>
 </div>
-<div id="unread" class="col s12">Unread</div>
-<div id="outbox" class="col s12">Outbox (Disabled)</div>
+
 <div id="contacto" class="col s12">
   <h1>contacto</h1>
   <div class="row">
@@ -113,14 +87,6 @@ Mauris hendrerit cursus venenatis. Integer mollis tellus sapien, sed ultricies q
 <script type="text/javascript">
   $(document).ready(function() {
     $('.slider').slider();
-
-    $(document).ready(function() {
-      $('.tabs').tabs({
-        swipeable: true,
-        responsiveThreshold: 1920
-      });
-    });
-
 
   });
 
