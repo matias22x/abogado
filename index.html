@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="stylesheets/materialize-stepper.min.css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
   <script src="/abogado/components/jquery/dist/jquery.min.js"></script>
   <script src="/abogado/components/angular/angular.min.js"></script>
   <script src="/abogado/components/angular-ui-router/release/angular-ui-router.min.js"></script>
@@ -42,9 +43,9 @@
   <script src="http://code.responsivevoice.org/responsivevoice.js"></script>
 </head>
 
-<body ng-app="abogadoApp" class="container">
-<div class="navbar-fixed">
-    <nav>
+<body ng-app="abogadoApp">
+
+    <!--nav>
       <div class="nav-wrapper">
         <a href="#!" class="brand-logo">Logo</a>
 
@@ -55,27 +56,426 @@
               </ul>
 
       </div>
-    </nav>
-  </div>
-  <br/>
-  <br/>
-  <br/>
+    </nav-->
 
-  <!--  <nav class="nav-center fill" >
-          <div class="nav-wrapper container" style="width: 80%;">
-            <ul id="main-menu" class="right hide-on-med-and-down">
-              <li  class="link one"><a ui-sref="main">inicio</a></li>
-              <li  class="link "><a ui-sref="seccion1">seccion 1</a></li>
-              <li  class="link "><a ui-sref="seccion2">session 2</a></li>
-            </ul>
+    <!--div class="header">
+      <h1><img src="img/logo.jpg" width="300px"></h1>
+    </div>
+
+    <nav>
+       <div class = "nav-wrapper">
+         <a class="fadeInLogo brand-logo animated slideInUp">
+           <i class="large material-icons">important_devices</i>
+         </a>
+          <ul id = "nav-mobile" class = "brand-logo center">
+            <li><a href="#section1">section 1</a></li>
+            <li><a href="#section2">section 2</a></li>
+            <li><a href="#section3">section 3</a></li>
+
+
+          </ul>
+       </div>
+
+    </nav-->
+
+    <div class="header">
+      <img src="img/logo_abogado.png" width="400px">
+          <nav>
+             <div class = "nav-wrapper">
+                  <ul id = "nav-mobile" class = "brand-logo center">
+                    <li>
+                      <a href="#section2">Informaci&oacute;n</a>
+                    </li>
+                    <li>
+                      <a href="#section3">Contacto</a>
+                    </li>
+                    <li>
+                      <a href="#section4">Ubicaci&oacute;n</a>
+                    </li>
+                  </ul>
+             </div>
+          </nav>
+    </div>
+
+
+    <section id="section1">
+      <!--div id="inicioPage">
+      <div class="slider">
+        <ul class="slides">
+
+          <li>
+            <img src="img/fondo1.jpg" class="imgOpaca">
+            <div class="caption center-align">
+              <div class="col s12 cajaAlumno">
+                <h4> <span class="title-bg">titulo</span> </h4>
+                <span class="light parrafo title-bgbis">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie ipsum sed erat egestas sodales. Mauris molestie justo quis nulla congue, ut consequat felis sagittis.</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="img/fondo2.jpg" class="imgOpaca">
+            <div class="caption center-align">
+              <div class="col s12 cajaAlumno">
+                <h4> <span class="title-bg">titulo 2</span> </h4>
+                <span class="light parrafo title-bgbis">Mauris hendrerit cursus venenatis. Integer mollis tellus sapien, sed ultricies quam imperdiet quis. Cras fringilla vulputate metus, vitae pellentesque diam sollicitudin vel.</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="img/fondo3.jpg" class="imgOpaca">
+            <div class="caption center-align">
+              <div class="col s12 cajaAlumno">
+                <h4> <span class="title-bg">titulo 3</span> </h4>
+                <span class="light parrafo title-bgbis">Aenean ac augue non ex volutpat pharetra ut at urna. Mauris vel pellentesque felis. Donec vulputate ornare orci accumsan interdum.</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="arrows prev" onclick="sliderAnt()"></div>
+        <div class="arrows next" onclick="sliderSig()"></div>
+      </div>
+
+    </div-->
+
+<!--CARROUSEEEEEEEEL-->
+<!--div id="slider">
+  <figure>
+    <img src="img/fondo1.jpg" />
+    <img src="img/fondo2.jpg" />
+    <img src="img/fondo3.jpg" />
+    <img src="img/fondo2.jpg" />
+    <img src="img/fondo1.jpg" />
+  </figure>
+</div-->
+
+<!-- Slider 1 -->
+<div class="slider" id="slider1">
+    <!-- Slides -->
+    <div style="background-image:url(img/fondo1.jpg)"></div>
+    <div style="background-image:url(img/fondo2.jpg)"></div>
+    <div style="background-image:url(img/fondo3.jpg)"></div>
+    <!-- The Arrows -->
+    <i class="left" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path></svg></i>
+    <i class="right" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path></svg></i>
+    <!-- Title Bar -->
+    <span class="titleBar">
+        <h4>M&aacute;s de 30 a&ntilde;os de experiencia.</h4>
+    </span>
+</div>
+
+<br>
+
+</section>
+
+    <section id="section2">
+      <!--div id="infoPage" class="col s12">
+        <span class="info">Informaci&oacute;n</span>
+          <ul>
+            <li>
+              <h3>Music</h3>
+              <p>Music is an art form whose medium is sound and silence. Generally, a song is considered the smallest standalone work of music, especially when involving singing. </p>
+            </li>
+            <li><span class="fa fa-music"></span>
+              <h3>Music</h3>
+              <p>Music is an art form whose medium is sound and silence. Generally, a song is considered the smallest standalone work of music, especially when involving singing. </p>
+              <p>The common elements of music are pitch (which governs melody and harmony), rhythm (and its associated concepts tempo, meter, and articulation), dynamics, and the sonic qualities of timbre and texture.</p>
+            </li>
+            <li><span class="fa fa-users"></span>
+              <h3>Music</h3>
+              <p>Music is an art form whose medium is sound and silence. Generally, a song is considered the smallest standalone work of music, especially when involving singing. </p>
+              <p>The common elements of music are pitch (which governs melody and harmony), rhythm (and its associated concepts tempo, meter, and articulation), dynamics, and the sonic qualities of timbre and texture. The word derives from Greek μουσική (mousike; "art of the Muses").</p></li>
+
+          </ul>
+      </div-->
+
+  <div class="column white txt-red uno">
+
+    <div class="border-title">
+      <h1>ESTUDIO JUR&Iacute;DICO
+</h1>
+      <h2>especializado en accidente de tr&aacute;nsito</h2>
+    </div>
+    <p>
+      <b>Iniciamos reclamos extrajudiciales y judiciales por:</b>
+      <br>•Daños por lesiones y/o fallecimiento del peatón en accidentes en la vía pública.
+      <br>•Daños por lesiones y/o fallecimiento del pasajero en colectivos, taxímetros, ferrocarril, subterráneos, y/u otro medio de transporte público.
+      <br>•Daños materiales y/o por lesiones ocasionados en accidente vial con su vehículo.
+    </p>
+  </div>
+
+  <div class="column blue txt-white dos">
+    <br>
+    <br>
+    <br>
+    <div class="border-title">
+      <h1>EN DERECHO LABORAL,</h1>
+      <h2>sustanciamos reclamos judiciales por:</h2>
+    </div>
+    <p>
+      <br>•Accidentes de trabajo.
+      <br>•Despidos sin causa.
+    </p>
+    </div>
+
+    </section>
+
+    <section id="section3">
+    <div id="contacto" class="col s6">
+      <h1>Contacto</h1>
+      <h5>Nos comunicaremos con usted a la brevedad.</h5>
+        <div class="row">
+          <form>
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="nombre" type="text" class="validate">
+                <label for="nombre">Nombre y apellido</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="telefono" type="text" class="validate">
+                <label for="telefono">Tel&eacute;fono</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="celular" type="text" class="validate">
+                <label for="celular">Celular</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+              <i class="material-icons right">send</i>
+            </button>
+          </form>
+        </div>
+
+        <!--div class="col s6">
+          <div class="row">
+            <div class="col s12">
+              <h5>Direccion</h5>
+            </div>
+            <div class="col s12 text-center">
+              <img class="center" src="img/mapa.jpg" />
+            </div>
           </div>
-        </nav> -->
+        </div>
+      </div>
+    </div-->
+    </section>
+
+    <footer>FOOTER</footer>
+
+  <div id="content-area">
+
+  </div>
+
   <main ui-view>
   </main>
+
   <script type="text/javascript">
-  $(document).ready(function() {
-    $('ul.tabs').tabs();
+
+    /*$(document).ready(function() {
+      $('ul.tabs').tabs();
+    });*/
+    // Page Scroll
+    jQuery(document).ready(function ($) {
+    	$('a').click(function() {
+    		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    			|| location.hostname == this.hostname) {
+
+    			var target = $(this.hash);
+    			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    			if (target.length) {
+    				$('html,body').animate({
+    					scrollTop: target.offset().top - 32
+    				}, 1000);
+    				return false;
+    			}
+    		}
+    	});
+    });
+
+    // Fixed Nav
+    jQuery(document).ready(function ($) {
+    	$(window).scroll(function(){
+    		var scrollTop = 142;
+    		if($(window).scrollTop() >= scrollTop){
+    			/*$('nav').css({
+    				position : 'fixed',
+    				top : '0'
+    			});*/
+          $('nav').addClass('nuevosEstilos');
+          $('nav a').addClass('nuevosEstilosA');
+
+    		}
+    		if($(window).scrollTop() < scrollTop){
+    			$('nav').removeClass('nuevosEstilos');
+          $('nav a').removeClass('nuevosEstilosA');
+    		}
+    	})
+
+      // Active Nav Link
+      $('nav ul li a').click(function(){
+             $('nav ul li a').removeClass('active');
+             $(this).addClass('active');
+        });
+    })
+
+//CAROUSEL
+
+
+jQuery(document).ready(function ($) {
+  "use strict";
+  $.fn.sliderResponsive = function(settings) {
+
+    var set = $.extend(
+      {
+        slidePause: 5000,
+        fadeSpeed: 800,
+        autoPlay: "on",
+        showArrows: "off",
+        hideDots: "off",
+        hoverZoom: "on",
+        titleBarTop: "off"
+      },
+      settings
+    );
+
+    var $slider = $(this);
+    var size = $slider.find("> div").length; //number of slides
+    var position = 0; // current position of carousal
+    var sliderIntervalID; // used to clear autoplay
+
+    // Add a Dot for each slide
+    $slider.append("<ul></ul>");
+    $slider.find("> div").each(function(){
+      $slider.find("> ul").append('<li></li>');
+    });
+
+    // Put .show on the first Slide
+    $slider.find("div:first-of-type").addClass("show");
+
+    // Put .showLi on the first dot
+    $slider.find("li:first-of-type").addClass("showli")
+
+     //fadeout all items except .show
+    $slider.find("> div").not(".show").fadeOut();
+
+    // If Autoplay is set to 'on' than start it
+    if (set.autoPlay === "on") {
+        startSlider();
+    }
+
+    // If showarrows is set to 'on' then don't hide them
+    if (set.showArrows === "on") {
+        $slider.addClass('showArrows');
+    }
+
+    // If hideDots is set to 'on' then hide them
+    if (set.hideDots === "on") {
+        $slider.addClass('hideDots');
+    }
+
+    // If hoverZoom is set to 'off' then stop it
+    if (set.hoverZoom === "off") {
+        $slider.addClass('hoverZoomOff');
+    }
+
+    // If titleBarTop is set to 'on' then move it up
+    if (set.titleBarTop === "on") {
+        $slider.addClass('titleBarTop');
+    }
+
+    // function to start auto play
+    function startSlider() {
+      sliderIntervalID = setInterval(function() {
+        nextSlide();
+      }, set.slidePause);
+    }
+
+    // on mouseover stop the autoplay
+    $slider.mouseover(function() {
+      if (set.autoPlay === "on") {
+        clearInterval(sliderIntervalID);
+      }
+    });
+
+    // on mouseout starts the autoplay
+    $slider.mouseout(function() {
+      if (set.autoPlay === "on") {
+        startSlider();
+      }
+    });
+
+    //on right arrow click
+    $slider.find("> .right").click(nextSlide)
+
+    //on left arrow click
+    $slider.find("> .left").click(prevSlide);
+
+    // Go to next slide
+    function nextSlide() {
+      position = $slider.find(".show").index() + 1;
+      if (position > size - 1) position = 0;
+      changeCarousel(position);
+    }
+
+    // Go to previous slide
+    function prevSlide() {
+      position = $slider.find(".show").index() - 1;
+      if (position < 0) position = size - 1;
+      changeCarousel(position);
+    }
+
+    //when user clicks slider button
+    $slider.find(" > ul > li").click(function() {
+      position = $(this).index();
+      changeCarousel($(this).index());
+    });
+
+    //this changes the image and button selection
+    function changeCarousel() {
+      $slider.find(".show").removeClass("show").fadeOut();
+      $slider
+        .find("> div")
+        .eq(position)
+        .fadeIn(set.fadeSpeed)
+        .addClass("show");
+      // The Dots
+      $slider.find("> ul").find(".showli").removeClass("showli");
+      $slider.find("> ul > li").eq(position).addClass("showli");
+    }
+
+    return $slider;
+  };
+})
+
+
+
+//////////////////////////////////////////////
+// Activate each slider - change options
+//////////////////////////////////////////////
+$(document).ready(function() {
+
+  $("#slider1").sliderResponsive({
+  // Using default everything
+    // slidePause: 5000,
+    // fadeSpeed: 800,
+    // autoPlay: "on",
+    // showArrows: "off",
+    // hideDots: "off",
+    // hoverZoom: "on",
+    // titleBarTop: "off"
   });
+
+});
+
   </script>
 </body>
 
