@@ -44,44 +44,11 @@
 </head>
 
 <body ng-app="abogadoApp">
-
-    <!--nav>
-      <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
-
-              <ul tabs reload="allTabContentLoaded">
-                  <li class="tab col s3"><a ng-click="irAInicio()" href=''>Inicio</a></li>
-                  <li class="tab col s3"><a ng-click="irAInformacion()" href=''>Informacion</a></li>
-                  <li class="tab col s3"><a ng-click="irAContacto()" href=''>Contacto</a></li>
-              </ul>
-
-      </div>
-    </nav-->
-
-    <!--div class="header">
-      <h1><img src="img/logo.jpg" width="300px"></h1>
-    </div>
-
-    <nav>
-       <div class = "nav-wrapper">
-         <a class="fadeInLogo brand-logo animated slideInUp">
-           <i class="large material-icons">important_devices</i>
-         </a>
-          <ul id = "nav-mobile" class = "brand-logo center">
-            <li><a href="#section1">section 1</a></li>
-            <li><a href="#section2">section 2</a></li>
-            <li><a href="#section3">section 3</a></li>
-
-
-          </ul>
-       </div>
-
-    </nav-->
-
     <div class="header">
       <img src="img/logo_abogado.png" width="400px">
           <nav>
              <div class = "nav-wrapper">
+                  <!--img src="" style="width:120px;" id="logo"-->
                   <ul id = "nav-mobile" class = "brand-logo center">
                     <li>
                       <a href="#section2">Informaci&oacute;n</a>
@@ -97,192 +64,103 @@
           </nav>
     </div>
 
-
-    <section id="section1">
-      <!--div id="inicioPage">
-      <div class="slider">
-        <ul class="slides">
-
-          <li>
-            <img src="img/fondo1.jpg" class="imgOpaca">
-            <div class="caption center-align">
-              <div class="col s12 cajaAlumno">
-                <h4> <span class="title-bg">titulo</span> </h4>
-                <span class="light parrafo title-bgbis">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie ipsum sed erat egestas sodales. Mauris molestie justo quis nulla congue, ut consequat felis sagittis.</span>
-              </div>
-            </div>
-          </li>
-          <li>
-            <img src="img/fondo2.jpg" class="imgOpaca">
-            <div class="caption center-align">
-              <div class="col s12 cajaAlumno">
-                <h4> <span class="title-bg">titulo 2</span> </h4>
-                <span class="light parrafo title-bgbis">Mauris hendrerit cursus venenatis. Integer mollis tellus sapien, sed ultricies quam imperdiet quis. Cras fringilla vulputate metus, vitae pellentesque diam sollicitudin vel.</span>
-              </div>
-            </div>
-          </li>
-          <li>
-            <img src="img/fondo3.jpg" class="imgOpaca">
-            <div class="caption center-align">
-              <div class="col s12 cajaAlumno">
-                <h4> <span class="title-bg">titulo 3</span> </h4>
-                <span class="light parrafo title-bgbis">Aenean ac augue non ex volutpat pharetra ut at urna. Mauris vel pellentesque felis. Donec vulputate ornare orci accumsan interdum.</span>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <div class="arrows prev" onclick="sliderAnt()"></div>
-        <div class="arrows next" onclick="sliderSig()"></div>
+   <section id="section1">
+      <!-- Slider 1 -->
+      <div class="slider" id="slider1">
+          <!-- Slides -->
+          <div style="background-image:url(img/fondo1.jpg)"></div>
+          <div style="background-image:url(img/fondo2.jpg)"></div>
+          <div style="background-image:url(img/fondo3.jpg)"></div>
+          <!-- The Arrows -->
+          <i class="left" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path></svg></i>
+          <i class="right" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path></svg></i>
+          <!-- Title Bar -->
+          <span class="titleBar">
+              <h4>M&aacute;s de 30 a&ntilde;os de experiencia.</h4>
+          </span>
       </div>
-
-    </div-->
-
-<!--CARROUSEEEEEEEEL-->
-<!--div id="slider">
-  <figure>
-    <img src="img/fondo1.jpg" />
-    <img src="img/fondo2.jpg" />
-    <img src="img/fondo3.jpg" />
-    <img src="img/fondo2.jpg" />
-    <img src="img/fondo1.jpg" />
-  </figure>
-</div-->
-
-<!-- Slider 1 -->
-<div class="slider" id="slider1">
-    <!-- Slides -->
-    <div style="background-image:url(img/fondo1.jpg)"></div>
-    <div style="background-image:url(img/fondo2.jpg)"></div>
-    <div style="background-image:url(img/fondo3.jpg)"></div>
-    <!-- The Arrows -->
-    <i class="left" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path></svg></i>
-    <i class="right" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path></svg></i>
-    <!-- Title Bar -->
-    <span class="titleBar">
-        <h4>M&aacute;s de 30 a&ntilde;os de experiencia.</h4>
-    </span>
-</div>
-
-<br>
-
-</section>
+    </section>
 
     <section id="section2">
-      <!--div id="infoPage" class="col s12">
-        <span class="info">Informaci&oacute;n</span>
-          <ul>
-            <li>
-              <h3>Music</h3>
-              <p>Music is an art form whose medium is sound and silence. Generally, a song is considered the smallest standalone work of music, especially when involving singing. </p>
-            </li>
-            <li><span class="fa fa-music"></span>
-              <h3>Music</h3>
-              <p>Music is an art form whose medium is sound and silence. Generally, a song is considered the smallest standalone work of music, especially when involving singing. </p>
-              <p>The common elements of music are pitch (which governs melody and harmony), rhythm (and its associated concepts tempo, meter, and articulation), dynamics, and the sonic qualities of timbre and texture.</p>
-            </li>
-            <li><span class="fa fa-users"></span>
-              <h3>Music</h3>
-              <p>Music is an art form whose medium is sound and silence. Generally, a song is considered the smallest standalone work of music, especially when involving singing. </p>
-              <p>The common elements of music are pitch (which governs melody and harmony), rhythm (and its associated concepts tempo, meter, and articulation), dynamics, and the sonic qualities of timbre and texture. The word derives from Greek μουσική (mousike; "art of the Muses").</p></li>
 
-          </ul>
-      </div-->
+      <div class="column white txt-red uno">
+        <div class="border-title">
+          <h1>ESTUDIO JUR&Iacute;DICO</h1>
+          <h2>especializado en accidente de tr&aacute;nsito</h2>
+        </div>
+        <p>
+          <b>Iniciamos reclamos extrajudiciales y judiciales por:</b>
+          <br>•Daños por lesiones y/o fallecimiento del peatón en accidentes en la vía pública.
+          <br>•Daños por lesiones y/o fallecimiento del pasajero en colectivos, taxímetros, ferrocarril, subterráneos, y/u otro medio de transporte público.
+          <br>•Daños materiales y/o por lesiones ocasionados en accidente vial con su vehículo.
+        </p>
+      </div>
 
-  <div class="column white txt-red uno">
-
-    <div class="border-title">
-      <h1>ESTUDIO JUR&Iacute;DICO
-</h1>
-      <h2>especializado en accidente de tr&aacute;nsito</h2>
-    </div>
-    <p>
-      <b>Iniciamos reclamos extrajudiciales y judiciales por:</b>
-      <br>•Daños por lesiones y/o fallecimiento del peatón en accidentes en la vía pública.
-      <br>•Daños por lesiones y/o fallecimiento del pasajero en colectivos, taxímetros, ferrocarril, subterráneos, y/u otro medio de transporte público.
-      <br>•Daños materiales y/o por lesiones ocasionados en accidente vial con su vehículo.
-    </p>
-  </div>
-
-  <div class="column blue txt-white dos">
-    <br>
-    <br>
-    <br>
-    <div class="border-title">
-      <h1>EN DERECHO LABORAL,</h1>
-      <h2>sustanciamos reclamos judiciales por:</h2>
-    </div>
-    <p>
-      <br>•Accidentes de trabajo.
-      <br>•Despidos sin causa.
-    </p>
-    </div>
-
+      <div class="column blue txt-white dos">
+          <br>
+          <br>
+          <br>
+          <div class="border-title">
+            <h1>EN DERECHO LABORAL,</h1>
+            <h2>sustanciamos reclamos judiciales por:</h2>
+          </div>
+          <p>
+            <br>•Accidentes de trabajo.
+            <br>•Despidos sin causa.
+          </p>
+      </div>
     </section>
 
     <section id="section3">
-    <div id="contacto" class="col s6">
-      <h1>Contacto</h1>
-      <h5>Nos comunicaremos con usted a la brevedad.</h5>
+      <div id="contacto" class="col s6">
+        <h1>Contacto</h1>
+        <h5>Nos comunicaremos con usted a la brevedad.</h5>
         <div class="row">
-          <form>
-            <div class="row">
-              <div class="input-field col s6">
-                <input id="nombre" type="text" class="validate">
-                <label for="nombre">Nombre y apellido</label>
+            <form>
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="nombre" type="text" class="validate">
+                  <label for="nombre">Nombre y apellido</label>
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s6">
-                <input id="telefono" type="text" class="validate">
-                <label for="telefono">Tel&eacute;fono</label>
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="telefono" type="text" class="validate">
+                  <label for="telefono">Tel&eacute;fono</label>
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s6">
-                <input id="celular" type="text" class="validate">
-                <label for="celular">Celular</label>
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="celular" type="text" class="validate">
+                  <label for="celular">Celular</label>
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s6">
-                <input id="email" type="email" class="validate">
-                <label for="email">Email</label>
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
               </div>
-            </div>
-            <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
-              <i class="material-icons right">send</i>
-            </button>
-          </form>
-        </div>
-
-        <!--div class="col s6">
-          <div class="row">
-            <div class="col s12">
-              <h5>Direccion</h5>
-            </div>
-            <div class="col s12 text-center">
-              <img class="center" src="img/mapa.jpg" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div-->
+              <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+                <i class="material-icons right">send</i>
+              </button>
+            </form>
+         </div>
     </section>
 
-    <footer>FOOTER</footer>
+    <section id="section4">
+      <div id="map"></div>
+    </section>
 
-  <div id="content-area">
-
-  </div>
-
-  <main ui-view>
-  </main>
+    <footer>
+      <img src="img/logo_abogado.png" width="200px">
+      <p class="center">4444-0000 • 1122334477
+      <p class="center">marcelocatena@estudioabogado.com
+      <p class="center">Calle Falsa 1234, Capital Federal
+    </footer>
 
   <script type="text/javascript">
 
-    /*$(document).ready(function() {
-      $('ul.tabs').tabs();
-    });*/
     // Page Scroll
     jQuery(document).ready(function ($) {
     	$('a').click(function() {
@@ -306,17 +184,15 @@
     	$(window).scroll(function(){
     		var scrollTop = 142;
     		if($(window).scrollTop() >= scrollTop){
-    			/*$('nav').css({
-    				position : 'fixed',
-    				top : '0'
-    			});*/
           $('nav').addClass('nuevosEstilos');
           $('nav a').addClass('nuevosEstilosA');
+          $("#logo").attr("src", "img/logo_chico_transparente.png");
 
     		}
     		if($(window).scrollTop() < scrollTop){
     			$('nav').removeClass('nuevosEstilos');
           $('nav a').removeClass('nuevosEstilosA');
+          $("#logo").removeAttr("src", "img/logo_chico_transparente.png");
     		}
     	})
 
@@ -361,11 +237,6 @@ jQuery(document).ready(function ($) {
     // Put .show on the first Slide
     $slider.find("div:first-of-type").addClass("show");
 
-    // Put .showLi on the first dot
-    $slider.find("li:first-of-type").addClass("showli")
-
-     //fadeout all items except .show
-    $slider.find("> div").not(".show").fadeOut();
 
     // If Autoplay is set to 'on' than start it
     if (set.autoPlay === "on") {
@@ -456,26 +327,105 @@ jQuery(document).ready(function ($) {
   };
 })
 
+    //////////////////////////////////////////////
+    // Activate each slider - change options
+    //////////////////////////////////////////////
+    $(document).ready(function() {
+
+      $("#slider1").sliderResponsive({
+      });
+
+    });
+
+    //Mapa
+    function initMap() {
+
+  // Exibir mapa
+  var myLatlng = new google.maps.LatLng(-3.7602237, -38.571306899999996);
+  var mapOptions = {
+  	scrollwheel: false,
+    zoom: 16,
+    center: myLatlng,
+    panControl: false,
+    mapTypeControlOptions: {
+      mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+    }
+  }
 
 
-//////////////////////////////////////////////
-// Activate each slider - change options
-//////////////////////////////////////////////
-$(document).ready(function() {
-
-  $("#slider1").sliderResponsive({
-  // Using default everything
-    // slidePause: 5000,
-    // fadeSpeed: 800,
-    // autoPlay: "on",
-    // showArrows: "off",
-    // hideDots: "off",
-    // hoverZoom: "on",
-    // titleBarTop: "off"
+  // Parâmetros do texto que será exibido no clique
+  var contentString =
+    '<h2>Work - Jumper Digital</h2>' +
+    '<p>Fortaleza/CE.</p>' +
+    '<a href="http://jumper.digital" target="_blank">Acesse o Site!</a>';
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString,
+    maxWidth: 700
   });
 
-});
+  // Exibir o mapa na div #map
+  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
+  // Marcador personalizado
+  var image = 'http://www.marksoatley.com.au/img/map-marker.png';
+  var marcadorPersonalizado = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    icon: image,
+    title: 'Jumper Digital',
+    animation: google.maps.Animation.DROP
+  });
+
+  // Exibir texto ao clicar no ícone
+  google.maps.event.addListener(marcadorPersonalizado, 'click', function() {
+    infowindow.open(map, marcadorPersonalizado);
+  });
+
+  // Estilizando o mapa
+  // Criando um array com os estilos
+  var styles = [{
+    stylers: [{
+      hue: "#333"
+    }, {
+      saturation: 20
+    }, {
+      lightness: -10
+    }, {
+      gamma: 1
+    }]
+  }, {
+    featureType: "road",
+    elementType: "geometry",
+    stylers: [{
+      lightness: 100
+    }, {
+      visibility: "simplified"
+    }]
+  }, {
+    featureType: "road",
+    elementType: "labels"
+  }];
+
+  // crio um objeto passando o array de estilos (styles) e definindo um nome para ele
+  var styledMap = new google.maps.StyledMapType(styles, {
+    name: "Johnatan Maciel"
+  });
+
+  // Aplicando as configurações do mapa
+  map.mapTypes.set('map_style', styledMap);
+  map.setMapTypeId('map_style');
+
+}
+
+// Função para carregamento assíncrono
+function loadScript() {
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyB-acOpizNOPl-nHwr3fvdJ3O1rYweFTco&callback=initMap";
+  document.body.appendChild(script);
+}
+
+window.onload = loadScript;
   </script>
 </body>
 

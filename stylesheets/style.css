@@ -81,6 +81,10 @@
   position : fixed;
   top : 0;
   background: white;
+  -webkit-transition: background-color 1s ease-out;
+ -moz-transition: background-color 1s ease-out;
+ -o-transition: background-color 1s ease-out;
+ transition: background-color 1s ease-out;
 }
 
 .nuevosEstilosA{
@@ -91,34 +95,6 @@
   color: white;
   background-color: #324359;
 }
-/*
-@import "lesshat";
-
-@import url(https://reset5.googlecode.com/hg/reset.min.css);
-@import url(https://fonts.googleapis.com/css?family=Nixie+One|Open+Sans:700italic,400,700|Open+Sans+Condensed:300,300italic,700|Slabo+13px);
-
-@font-header : 'Nixie One', serif;
-@font-body : 'Open Sans Condensed', sans-serif;
-
-@white: #fff;
-@pink: #ff6e6f;
-@gray-dark: #343434;
-@gray-med: #666;
-@gray-light: #eee;
-
-header,
-nav,
-footer,
-div { width: 100%; }
-
-.header {
-  padding: 20px 0;
-  background: #fff;
-  font: normal 2em/normal 'Nixie One', serif;
-  color: #ff6e6f;
-  text-align: center;
-}
-*/
 
 .header {
     padding: 20px 0;
@@ -138,27 +114,7 @@ nav {
   font-size: 30px;
    z-index: 1000;
 }
-/*
-nav ul {
-    list-style: none;
-    text-align: center;
-    overflow: hidden;
-}
 
-nav ul li{
-  display: inline-block;
-  margin: 0 -4px;
-  padding: 5px 0;
-}
-
-nav ul li a{
-  padding: 5px 20px;
-  font: normal 1em/normal 'Open Sans Condensed', sans-serif;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-*/
 nav ul li a.active {
     background: #324359;
     color: white;
@@ -182,7 +138,7 @@ section {
   #section3 {
     color: #162238;
     padding: 20px;
-    margin: 20px;
+    margin: 60px;
     text-align: center;
   }
 
@@ -213,67 +169,67 @@ footer {
     list-style: none;
   }
 
-      ul li:hover {
-        box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-      }
+ul li:hover {
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
 
-      ul li:hover span {
-        color: #63B7E6;
-      }
-      ul li:hover p {
-        color: #555;
-      }
-      ul li:hover h3 {
-        color: #63B7E6;
-      }
-      ul li:hover h3:after{
-        width: 25px;
-      }
-      span {
-        font-size: 2.6em;
-        display: block;
-        transition: color .3s;
-        color: #A2A2A2;
+ul li:hover span {
+  color: #63B7E6;
+}
+ul li:hover p {
+  color: #555;
+}
+ul li:hover h3 {
+  color: #63B7E6;
+}
+ul li:hover h3:after{
+  width: 25px;
+}
+span {
+  font-size: 2.6em;
+  display: block;
+  transition: color .3s;
+  color: #A2A2A2;
 
-      }
+}
 
-      span:before, span:after {
-        position: static;
-      }
+span:before, span:after {
+  position: static;
+}
 
-      h3 {
-        color: darken(#A2A2A2, 20%);
-        display: inline-block;
-        font-size: 24px;
-        font-weight: 100;
-        transition: color .3s;
+h3 {
+  color: darken(#A2A2A2, 20%);
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 100;
+  transition: color .3s;
 
-      }
+}
 
-      h3:after{
-          content: '';
-          position: relative;
-          left: 50%;
-          top: 20px;
-          transform: translateX(-50%);
-          display: block;
-          width: 40px;
-          height: 1px;
-          background: darken(#A2A2A2, 20%);
-          transition: width .3s;
-      }
-      p {
-        color: #A2A2A2;
-        text-align: left;
-        text-indent: 1em;
-        font-size: 16px;
-        line-height: 26px;
-        transition: color .3s;
-      }
+h3:after{
+    content: '';
+    position: relative;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: darken(#A2A2A2, 20%);
+    transition: width .3s;
+}
+p {
+  color: #A2A2A2;
+  text-align: left;
+  text-indent: 1em;
+  font-size: 16px;
+  line-height: 26px;
+  transition: color .3s;
+}
 
-      span.info {
-        text-align: center;
-      }
+span.info {
+  text-align: center;
+}
 
 /*CAROUSEL*/
 
@@ -299,34 +255,6 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 footer {
     background: #324359 !important;
 }
-
-/*CAROUSEL*/
-/*
-@keyframes slidy {
-0% { left: 0%; }
-20% { left: 0%; }
-25% { left: -100%; }
-45% { left: -100%; }
-50% { left: -200%; }
-70% { left: -200%; }
-75% { left: -300%; }
-95% { left: -300%; }
-100% { left: -400%; }
-}
-
-body { margin: 0; }
-div#slider { overflow: hidden; }
-div#slider figure img { width: 20%; float: left; }
-div#slider figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
-  animation: 30s slidy infinite;
-}
-*/
 
 .slider,
 .slider > div {
@@ -610,4 +538,30 @@ section h1 {
 /*CONTACTO*/
 .row .col.s6 {
     left: 25%!important;
+}
+
+.btn:hover, .btn-large:hover {
+    background-color: #324359!important;
+}
+
+.btn:hover, .btn-large {
+    background-color: #324359!important;
+    color: #fff;
+}
+
+.btn, .btn-large {
+    background-color: #D9D9D9!important;
+    color: #324359;
+}
+
+input[type=text]:focus:not([readonly]){
+  box-shadow: 0 1px 0 0 #324359!important;
+}
+
+/*Mapa*/
+
+#map {
+	margin: 3em auto 0;
+    height: 500px;
+    width: 80%;
 }
